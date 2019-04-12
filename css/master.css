@@ -1,0 +1,46 @@
+/* 
+    Created on : Mar 27, 2016, 3:04:32 PM
+    Author     : Han.D.Phan
+*/
+
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
+
+header {
+
+}
+
+#wrapper {
+/*    border: #cd0a0a;
+    border-style: solid;*/
+    margin-right: auto;
+    margin-left: auto;
+    width: 96%; /* Holding outermost DIV */
+    max-width: 1024px;/*design scales to 96% viewport but will never expand beyond 1024px wide*/
+}
+
+footer {
+    color: white;
+    position: absolute;
+}
+
+.homeButton{
+    max-width: 100%;
+    max-height: 100%;
+    width: 6em;
+    height: auto;
+    /*    border: #cd0a0a;
+        border-style: solid;*/
+}
+
+.textColor {
+    color: white;
+}
+
+.copyright-link{
+    color: white;
+}
+
+.copyright-link:hover {
+    text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+    box-shadow: 0px 0px 148px -2px rgba(250,107,142,0.45);
+}
