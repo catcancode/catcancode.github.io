@@ -8,11 +8,8 @@ Copyright © 2016 Han Duy Phan. All rights reserved.
         <title>CatCanCode.Com</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-        <link rel=stylesheet href=css/index.css>
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">       
         <link rel=stylesheet href=css/master.css>
-        <script src="js/libs/jquery-2.2.1/jquery-2.2.1.js"></script>
-        <script src="js/index.js"></script>
-        <script src="js/libs/jquery-ui-1.11.4/jquery-ui.min.js"></script>
     </head>
     <body>
         <div id="wrapper">
@@ -21,10 +18,23 @@ Copyright © 2016 Han Duy Phan. All rights reserved.
                     <img class="homeButton" src="image/logo.png" alt="Home">
                 </a>
             </header>
+            
             <nav id="fullNav">
                 <ul>
                     <li><div class="round-button-circle"><a href="about.html">About</a></div></li>
-                    <li class='deg30' id="socialButtonLarge"><div class="round-button-circle"><a href="javascript:;">Social</a></div></li>
+                    <li class='deg30'>
+                        <div class="round-button-circle">
+                            <a href="javascript:;" id="socialButtonClickLarge">Social</a>
+                        </div>
+                    </li>
+                    <ul id="socialButtonsLarge" class="socialButtons">
+                            <li><div class="social-button-circle"><a href="http://example.com"><i class="fa fa-linkedin"></i></a></div></li>
+                            <li><div class="social-button-circle"><a href="http://example.com"><i class="fa fa-facebook"></i></a></div></li>
+                            <li><div class="social-button-circle"><a href="http://example.com"><i class="fa fa-twitter"></i></a></div></li>
+                            <li><div class="social-button-circle"><a href="http://example.com"><i class="fa fa-google-plus"></i></a></div></li>
+                            <li><div class="social-button-circle"><a href="http://example.com"><i class="fa fa-youtube"></i></a></div></li>
+                            <li><div class="social-button-circle"><a href="http://example.com"><i class="fa fa-instagram"></i></a></div></li>
+                    </ul>
                     <li class='deg90'><div class="round-button-circle"><a href="http://example.com">CV</a></div></li>
                     <li class='deg150'><div class="round-button-circle"><a href="http://example.com">Art</a></div></li>
                     <li class='deg210'><div class="round-button-circle"><a href="http://example.com">Music</a></div></li>
@@ -36,7 +46,17 @@ Copyright © 2016 Han Duy Phan. All rights reserved.
             <nav id="mediumNav">
                 <ul>
                     <li><div class="round-button-circle"><a href="about.html"><i class="fa fa-paw"></i></a></div></li>
-                    <li class='deg30' id="socialButtonMedium"><div class="round-button-circle"><a href="javascript:;"><i class="fa fa-thumbs-o-up"></i></a></div></li>
+                    <li class='deg30' id="socialButtonMedium">
+                        <div class="round-button-circle"><a href="javascript:;" id="socialButtonClickMedium"><i class="fa fa-thumbs-o-up"></i></a></div>
+                    </li>
+                    <ul id="socialButtonsMedium" class="socialButtons">
+                            <li><div class="social-button-circle"><a href="http://example.com"><i class="fa fa-linkedin"></i></a></div></li>
+                            <li><div class="social-button-circle"><a href="http://example.com"><i class="fa fa-facebook"></i></a></div></li>
+                            <li><div class="social-button-circle"><a href="http://example.com"><i class="fa fa-twitter"></i></a></div></li>
+                            <li><div class="social-button-circle"><a href="http://example.com"><i class="fa fa-google-plus"></i></a></div></li>
+                            <li><div class="social-button-circle"><a href="http://example.com"><i class="fa fa-youtube"></i></a></div></li>
+                            <li><div class="social-button-circle"><a href="http://example.com"><i class="fa fa-instagram"></i></a></div></li>
+                    </ul>
                     <li class='deg90'><div class="round-button-circle"><a href="http://example.com"><i class="fa fa-paper-plane-o"></i></a></div></li>
                     <li class='deg150'><div class="round-button-circle"><a href="http://example.com"><i class="fa fa-paint-brush"></i></a></div></li>
                     <li class='deg210'><div class="round-button-circle"><a href="http://example.com"><i class="fa fa-music"></i></a></div></li>
@@ -44,18 +64,39 @@ Copyright © 2016 Han Duy Phan. All rights reserved.
                     <li class='deg330'><div class="round-button-circle"><a href="http://example.com"><i class="fa fa-wordpress"></i></a></div></li>
                 </ul>
             </nav>
-
-            <ul id="socialButtons">
-                <li><div class="social-button-circle"><a href="http://example.com"><i class="fa fa-linkedin"></i></a></div></li>
-                <li><div class="social-button-circle"><a href="http://example.com"><i class="fa fa-facebook"></i></a></div></li>
-                <li><div class="social-button-circle"><a href="http://example.com"><i class="fa fa-twitter"></i></a></div></li>
-                <li><div class="social-button-circle"><a href="http://example.com"><i class="fa fa-google-plus"></i></a></div></li>
-                <li><div class="social-button-circle"><a href="http://example.com"><i class="fa fa-youtube"></i></a></div></li>
-                <li><div class="social-button-circle"><a href="http://example.com"><i class="fa fa-instagram"></i></a></div></li>
-            </ul>
+            
             <footer>
-                <small><a class="copyright-link" href="index.html">CatCanCode.Com</a> is Responsive & Mobile Friendly | Copyright &copy; 2016 Han Duy Phan. All Rights Reserved.</small>
+                <small>
+                    <a class="copyright-link" href="index.html">CatCanCode.Com</a> is Responsive & Mobile Friendly.
+                    </br>
+                    Copyright &copy; 2019 Han Duy Phan. All Rights Reserved.
+                </small>
             </footer>
         </div>
+
+        <Script>
+            (function() {
+                //Javascript code executed after DOM is ready
+                var button = document.querySelector('#socialButtonClickLarge');
+                var menu = document.querySelector('#socialButtonsLarge');
+                button.addEventListener('click', function (event) {
+                    if (menu.style.display === "block") {
+                        menu.style.display = "none";
+                    } else {
+                        menu.style.display = "block";
+                    }
+                });
+
+                let button2 = document.querySelector('#socialButtonClickMedium');
+                let menu2 = document.querySelector('#socialButtonsMedium');
+                button2.addEventListener('click', function (event) {
+                    if (menu2.style.display === "block") {
+                        menu2.style.display = "none";
+                    } else {
+                        menu2.style.display = "block";
+                    }
+                });
+            })();
+        </Script>
     </body>
 </html>

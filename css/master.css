@@ -1,17 +1,21 @@
 /* 
-    Created on : Mar 27, 2016, 3:04:32 PM
-    Author     : Han.D.Phan
+    Author : Han D. Phan
 */
 
-@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css);
-
-header {
-
+/* BACKGROUND */
+body {
+    background-color:black;
+    background-image:
+    radial-gradient(white, rgba(255,255,255,.2) 3px, transparent 10px),
+    radial-gradient(white, rgba(255,255,255,.15) 2px, transparent 5px),
+    radial-gradient(white, rgba(255,255,255,.1) 3px, transparent 5px),
+    radial-gradient(rgba(255,255,255,.4), rgba(255,255,255,.1) 3px, transparent 5px);
+    background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+    background-position: 0 0, 40px 60px, 130px 270px, 70px 100px;
 }
 
+/* BODY */
 #wrapper {
-/*    border: #cd0a0a;
-    border-style: solid;*/
     margin-right: auto;
     margin-left: auto;
     width: 96%; /* Holding outermost DIV */
@@ -28,8 +32,6 @@ footer {
     max-height: 100%;
     width: 6em;
     height: auto;
-    /*    border: #cd0a0a;
-        border-style: solid;*/
 }
 
 .textColor {
@@ -44,3 +46,246 @@ footer {
     text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
     box-shadow: 0px 0px 148px -2px rgba(250,107,142,0.45);
 }
+
+/* **********************************************/
+/* Large Screen: Hide #mediumNav; Show #fullNav */
+@media screen and (min-width: 801px) {
+    #mediumNav{
+        visibility: hidden;
+        display: none;
+    }
+
+    /* Nav for Large Screen */
+    .round-button-circle {
+        width: 6em;
+        height: 6em;
+        border-radius: 100%;
+        border:0.2em solid #cfdcec;
+        overflow:hidden;
+        background: #4679BD; 
+        box-shadow: 0 0 3px gray;
+        opacity: 0.85;
+    }
+    .round-button-circle:hover {
+        background:#30588e;
+        text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+        box-shadow: 0px 0px 148px -2px rgba(11,207,142,0.55);
+        opacity: 1;
+    }
+    .round-button-circle a {
+        display:block;
+        float:left;
+        width:100%;
+        padding-top:50%;
+        padding-bottom:50%;
+        line-height:1em;
+        margin-top:-0.5em;
+        text-align:center;
+        color:#e2eaf3;
+        font-family:Verdana;
+        font-size:1.2em;
+        font-weight:bold;
+        text-decoration:none;
+    }
+
+    /* Arrange buttons on a circle */
+    nav {
+        position: relative;
+        width: 30em;
+        height: 30em;
+        padding: 4.3841em; /*= 3.1em * 1.4 (3.1em = half the width of an img, 1.4 = sqrt(2))*/
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0.1em;
+        margin-bottom: 3em;
+        background: none;
+    }
+    nav ul li {
+        display: block;
+        position: absolute;
+        top: 50%; left: 50%; 
+        width: 6em; height: 6em;
+        margin: -3.1em;
+    }
+    nav ul li img { display: block; width: 100%; }
+    .deg30 { transform: rotate(30deg) translate(15em) rotate(-30deg); }
+    .deg90 { transform: rotate(90deg) translate(15em) rotate(-90deg); }
+    .deg150 { transform: rotate(150deg) translate(15em) rotate(-150deg); }
+    .deg210 { transform: rotate(210deg) translate(15em) rotate(-210deg); }
+    .deg270 { transform: rotate(270deg) translate(15em) rotate(-270deg); }
+    .deg330 { transform: rotate(330deg) translate(15em) rotate(-330deg); }
+
+    /* *****************/
+    /* Social sub-menu */
+    .social-button-circle {
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+        margin: -30%;
+        border:0.2em solid #cfdcec;
+        overflow:hidden;
+        background: #4679BD; 
+        box-shadow: 0 0 3px gray;
+        opacity: 0.85;
+    }
+    .social-button-circle:hover {
+        background:#30588e;
+        text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+        box-shadow: 0px 0px 148px -2px rgba(11,207,142,0.55);
+        opacity: 1;
+    }
+    .social-button-circle a {
+        display:block;
+        float:left;
+        width:100%;
+        padding-top:50%;
+        padding-bottom:50%;
+        line-height:1em;
+        margin-top:-0.5em;
+        text-align:center;
+        color:#e2eaf3;
+        font-family:Verdana;
+        font-size:1.2em;
+        font-weight:bold;
+        text-decoration:none;
+    }
+    .socialButtons {
+        position: relative;
+        margin-top: 44.5%;
+        margin-left: 110%;
+        padding-left: 0%;
+        width: 0%;
+        height: 0%;
+        display: none;
+        background: none;
+    }
+    .socialButtons li {
+        display: block;
+        position: relative;
+        margin: 0%;
+    }
+}
+
+/* ************************************************/
+/* Medium Screen: Hide #fullNav; Show #medifumNav */
+@media screen and (max-width: 800px) {
+    #fullNav{
+        visibility: hidden;
+        display: none;
+    }
+
+    /* Nav for medium screen */
+    .round-button-circle {
+        width: 4em;
+        height: 4em;
+        border-radius: 100%;
+        border:0.2em solid #cfdcec;
+        overflow:hidden;
+        background: #4679BD; 
+        box-shadow: 0 0 3px gray;
+        opacity: 0.85;
+    }
+    .round-button-circle:hover {
+        background:#30588e;
+        text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+        box-shadow: 0px 0px 148px -2px rgba(11,207,142,0.55);
+        opacity: 1;
+    }
+    .round-button-circle a {
+        display:block;
+        float:left;
+        width:100%;
+        padding-top:50%;
+        padding-bottom:50%;
+        line-height:1em;
+        margin-top:-0.5em;
+        text-align:center;
+        color:#e2eaf3;
+        font-family:Verdana;
+        font-size:1.2em;
+        font-weight:bold;
+        text-decoration:none;
+    }
+
+    /* Arrange buttons on a circle */
+    nav {
+        position: relative;
+        width: 24em;
+        height: 24em;
+        padding-top: 1em;
+        padding-bottom: 0em;
+        padding-right: 0em;
+        padding-left: 0em;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0.1em;
+        margin-bottom: 3em;
+        background:none;
+    }
+    nav ul li {
+        display: block;
+        position: absolute;
+        top: 50%; left: 50%; 
+        width: 4em; height: 4em;
+        margin: -3.1em;
+    }
+    nav ul li img { display: block; width: 100%; }
+    .deg30 { transform: rotate(30deg) translate(7em) rotate(-30deg); }
+    .deg90 { transform: rotate(90deg) translate(7em) rotate(-90deg); }
+    .deg150 { transform: rotate(150deg) translate(7em) rotate(-150deg); }
+    .deg210 { transform: rotate(210deg) translate(7em) rotate(-210deg); }
+    .deg270 { transform: rotate(270deg) translate(7em) rotate(-270deg); }
+    .deg330 { transform: rotate(330deg) translate(7em) rotate(-330deg); }
+
+    /* *****************/
+    /* Social sub-menu */
+    .social-button-circle {
+        width: 50%;
+        height: 50%;
+        border-radius: 50%;
+        margin: -30%;
+        border:0.2em solid #cfdcec;
+        overflow:hidden;
+        background: #4679BD; 
+        box-shadow: 0 0 3px gray;
+        opacity: 0.85;
+    }
+    .social-button-circle:hover {
+        background:#30588e;
+        text-shadow: 0 0 10px rgba(255,255,255,1) , 0 0 20px rgba(255,255,255,1) , 0 0 30px rgba(255,255,255,1) , 0 0 40px #00ffff , 0 0 70px #00ffff , 0 0 80px #00ffff , 0 0 100px #00ffff ;
+        box-shadow: 0px 0px 148px -2px rgba(11,207,142,0.55);
+        opacity: 1;
+    }
+    .social-button-circle a {
+        display:block;
+        float:left;
+        width:100%;
+        padding-top:50%;
+        padding-bottom:50%;
+        line-height:1em;
+        margin-top:-0.5em;
+        text-align:center;
+        color:#e2eaf3;
+        font-family:Verdana;
+        font-size:1.2em;
+        font-weight:bold;
+        text-decoration:none;
+    }
+    .socialButtons {
+        position: relative;
+        margin-top: 33%;
+        margin-left: 85%;
+        padding-left: 0%;
+        width: 0%;
+        height: 0%;
+        display: none;
+        background: none;
+    }
+    .socialButtons li {
+        display: block;
+        position: relative;
+        margin: 0%;
+    }
+}
+
+
