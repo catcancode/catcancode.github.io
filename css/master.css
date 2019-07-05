@@ -89,6 +89,10 @@ footer {
         text-decoration:none;
     }
 
+    .round-button-circle a img {
+        margin-top: -1.2em;
+    }
+
     /* Arrange buttons on a circle */
     nav {
         position: relative;
@@ -206,6 +210,10 @@ footer {
         font-size:1.2em;
         font-weight:bold;
         text-decoration:none;
+    }
+
+    .round-button-circle a img {
+        margin-top: -0.75em;
     }
 
     /* Arrange buttons on a circle */
