@@ -20,7 +20,7 @@ body {
     margin-right: auto;
     margin-left: auto;
     width: 96%; /* Holding outermost DIV */
-    max-width: 1024px;/*design scales to 96% viewport but will never expand beyond 1024px wide*/
+    max-width: 960px;/*design scales to 96% viewport but will never expand beyond 960px wide*/
 }
 
 footer {
@@ -50,7 +50,7 @@ footer {
 
 /* **********************************************/
 /* Large Screen: Hide #mediumNav; Show #fullNav */
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 769px) {
     #mediumNav{
         visibility: hidden;
         display: none;
@@ -127,7 +127,7 @@ footer {
         height: 50%;
         border-radius: 50%;
         margin: -30%;
-        border:0.2em solid #cfdcec;
+        border:0.2em solid #cfdcec; 
         overflow:hidden;
         background: #4679BD; 
         box-shadow: 0 0 3px gray;
@@ -173,7 +173,7 @@ footer {
 
 /* ************************************************/
 /* Medium Screen: Hide #fullNav; Show #medifumNav */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     #fullNav{
         visibility: hidden;
         display: none;
